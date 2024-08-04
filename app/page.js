@@ -77,6 +77,21 @@ export default function Home() {
     await updateInventory()
   }
 
+  const deleteItem = async (item) => {
+    const docRef = doc(collection(firestore, 'inventory'), item);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      // If the item exists, delete the entire document
+      await deleteDoc(docRef);
+    } else {
+      console.log(`Item ${item} does not exist in the inventory.`);
+    }
+
+    await updateInventory();
+  }
+
+
   // Filtered inventory based on search term
   const filteredInventory = inventory.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -124,7 +139,8 @@ export default function Home() {
           </Stack>
         </Box>
       </Modal>
-      <Button variant="contained" onClick={handleOpen}>
+      <Button variant="contained" onClick={handleOpen}
+        sx={{ backgroundColor: '#C08E47', '&:hover': { backgroundColor: '#A76B3D' } }}>
         Add New Item
       </Button>
       <TextField
@@ -138,39 +154,57 @@ export default function Home() {
       <Box border={'0px solid #333'}>
         <Box
           width="90vw"
-          height="100px"
-          bgcolor={'#660000'}
+          height="90px"
+          bgcolor={'#26331A'}
           borderRadius={"10px"}
           display={'flex'}
           justifyContent={'center'}
           alignItems={'center'}
         >
-          <Typography variant={'h2'} color={'#FFCC99'} textAlign={'center'}>
+          <Typography variant={'h4'} color={'white'} textAlign={'center'}>
             Inventory Items
           </Typography>
         </Box>
-        <Stack width="80vw" height="300px" spacing={2} overflow={'auto'} marginTop={2} marginLeft={'60px'}>
+        <Stack width="80vw" height="300px" spacing={2} overflow={'visible'} marginTop={2} marginLeft={8}>
           {filteredInventory.map(({ name, quantity }) => (
             <Box
               key={name}
               width="80vw"
-              minHeight="100px"
+              minHeight="80px"
               display={'flex'}
               borderRadius={"10px"}
               justifyContent={'space-between'}
               alignItems={'center'}
-              bgcolor={'#FFCC99'}
+              bgcolor={'#E5A98C'}
               paddingX={5}
             >
-              <Typography variant={'h4'} color={'#660000'} textAlign={'center'}>
+              <Typography variant={'h5'} color={'black'} textAlign={'center'}>
                 {name.charAt(0).toUpperCase() + name.slice(1)}
               </Typography>
-              <Typography variant={'h5'} color={'#333'} textAlign={'center'}>
+              <Typography variant={'h5'} color={'black'} textAlign={'center'}>
                 Quantity: {quantity}
               </Typography>
-              <Button variant="contained" onClick={() => removeItem(name)}>
-                Remove
-              </Button>
+              <div style={{ display: 'flex', gap: '6px' }}>
+                <Button variant="contained"
+                  style={{ backgroundColor: '#C9725A', color: '#fff' }}
+                  onClick={() => removeItem(name)}>
+                  <Typography variant={'h6'}>  - </Typography>
+                </Button>
+                <Button variant="contained"
+                  style={{ backgroundColor: '#C9725A', color: '#fff' }}
+                  onClick={() => addItem(name)}>
+                  <Typography variant={'h6'}>  + </Typography>
+                </Button>
+                <Button variant="contained"
+                  style={{ backgroundColor: '#C9725A', color: '#fff', padding: '11px 0' }}
+                  onClick={() => deleteItem(name)}>
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/6861/6861362.png"
+                    alt="Delete"
+                    style={{ width: '24px', height: '24px' }} // Adjust size as needed
+                  />
+                </Button>
+              </div>
             </Box>
           ))}
         </Stack>

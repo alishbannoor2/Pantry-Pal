@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="left">Pantry Tracker</h1>
 
-## Getting Started
+###
 
-First, run the development server:
+<div align="center">
+  <img height="200" src="https://th.bing.com/th/id/R.134e981ed86e27dd576d9c08c8353f62?rik=GF05Wc21MNBTgg&pid=ImgRaw&r=0"  />
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+###
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="left">My Pantry Tracker is a user-friendly and intuitive web application designed to help you manage your pantry inventory efficiently. Users can easily add and update items in their pantry, ensuring that they always know what they have on hand. The application allows you to keep track of item quantities and expiration dates, helping to minimize food waste and streamline meal planning.</p>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+###
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h2 align="left">Demo</h2>
 
-## Learn More
+###
 
-To learn more about Next.js, take a look at the following resources:
+<div align="center">
+  <img height="200" src="https://github.com/alishbannoor2/Pantry-Tracker/blob/dd1b755ccb48dfc6f221fafd299ed42015c1fea6/app/pantry%20tracker.mp4"  />
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+###
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<h2 align="left">Built with</h2>
 
-## Deploy on Vercel
+###
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="left">My pantry tracker https://pantry-tracker-bice.vercel.app/ which features some of my github projects as well as my resume and technical skills.<br><br>This project is built using these technologies.<br><br>▪ Next.js<br>▪ Node.js<br>▪ React.js<br>▪ MUI<br>▪ Firebase Auth<br>▪ Firebase Database<br>▪ VsCode<br>▪ Vercel</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+###
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="40" alt="firebase logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" height="40" alt="materialui logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+</div>
+
+###
+
+<h2 align="left">Features</h2>
+
+###
+
+<p align="left">📖 Multi-Page Layout<br><br>🎨 Styled with Next.js and Material UI with easy to customize colors<br><br>📱 Fully Responsive<br><br>🔍 Add, delete, update, search items<br><br>🔐 Login or Signup using Google accounts</p>
+
+###
+
+<h2 align="left">Getting started</h2>
+
+###
+
+<p align="left">Clone down this repository. You will need node.js and git installed globally on your machine.</p>
+
+###
+
+<h2 align="left">Installations</h2>
+
+###
+
+<p align="left">1. Installation: npm install<br><br>3. Run: npm install @mui/material @emotion/react @emotion/styled<br><br>2. In the project directory, you can run: npm run dev<br><br>Open http://localhost:3000 to view it in the browser. The page will reload if you make edits.</p>
+
+###
+
+<h2 align="left">Usage</h2>
+
+###
+
+<p align="left">You can start editing the page by modifying app/page.js. The page auto-updates as you edit the file.</p>
+
+###
+
+<h2 align="left">Contribution</h2>
+
+###
+
+<p align="left">You're welcome to fork this repository, enhance it, and submit pull requests. If you're planning significant changes, please open an issue first to discuss your proposed modifications.</p>
+
+###

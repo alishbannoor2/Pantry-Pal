@@ -12,16 +12,6 @@
 
 ###
 
-<h2 align="left">Demo</h2>
-
-###
-
-<div align="center">
-  <img height="200" src="https://github.com/alishbannoor2/Pantry-Tracker/blob/dd1b755ccb48dfc6f221fafd299ed42015c1fea6/app/pantry%20tracker.mp4"  />
-</div>
-
-###
-
 <h2 align="left">Built with</h2>
 
 ###

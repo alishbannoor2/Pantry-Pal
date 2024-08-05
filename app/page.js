@@ -1,5 +1,5 @@
 'use client'
-
+import { useRouter } from 'next/router'; // Import useRouter for navigation
 import { useState, useEffect } from 'react'
 import { Box, Stack, Typography, Button, Modal, TextField } from '@mui/material'
 import { firestore } from '@/firebase'
@@ -12,6 +12,7 @@ import {
   deleteDoc,
   getDoc,
 } from 'firebase/firestore'
+import Link from 'next/link';
 
 const style = {
   position: 'absolute',
@@ -91,7 +92,6 @@ export default function Home() {
     await updateInventory();
   }
 
-
   // Filtered inventory based on search term
   const filteredInventory = inventory.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -100,7 +100,7 @@ export default function Home() {
   return (
     <Box
       width="100vw"
-      height="100vh"
+      height="85vh"
       display={'flex'}
       justifyContent={'center'}
       flexDirection={'column'}
@@ -149,65 +149,48 @@ export default function Home() {
         fullWidth
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        sx={{ marginBottom: 2, width: '90%' }}
+        sx={{
+          marginBottom: 2,
+          width: '90%',
+          backgroundColor: 'rgba(255, 255, 255, 0.7)', // Light shade background
+          borderRadius: '4px', // Optional: add some border radius for a smoother look
+        }}
       />
-      <Box border={'0px solid #333'}>
-        <Box
-          width="90vw"
-          height="90px"
-          bgcolor={'#26331A'}
-          borderRadius={"10px"}
-          display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
-        >
-          <Typography variant={'h4'} color={'white'} textAlign={'center'}>
+
+      {/* Inventory Items Heading */}
+      <Box
+        width="90vw"
+        height="90px"
+        bgcolor={'#26331A'}
+        borderRadius={"10px"}
+        display={'flex'}
+        justifyContent={'center'}
+        alignItems={'center'}
+      >
+        <Typography variant={'h4'} color={'white'} textAlign={'center'}>
+          <Link href="/about" style={{ textDecoration: 'none', color: 'white' }}>
             Inventory Items
+          </Link>
+        </Typography>
+      </Box>
+
+      {/* Displaying the filtered inventory */}
+      <Box width="90%" display="flex" flexDirection="column" alignItems="center">
+        {searchTerm === '' ? (
+          <Typography variant="h6" color="gray">
+            Please enter a search term.
           </Typography>
-        </Box>
-        <Stack width="80vw" height="300px" spacing={2} overflow={'visible'} marginTop={2} marginLeft={8}>
-          {filteredInventory.map(({ name, quantity }) => (
-            <Box
-              key={name}
-              width="80vw"
-              minHeight="80px"
-              display={'flex'}
-              borderRadius={"10px"}
-              justifyContent={'space-between'}
-              alignItems={'center'}
-              bgcolor={'#E5A98C'}
-              paddingX={5}
-            >
-              <Typography variant={'h5'} color={'black'} textAlign={'center'}>
-                {name.charAt(0).toUpperCase() + name.slice(1)}
-              </Typography>
-              <Typography variant={'h5'} color={'black'} textAlign={'center'}>
-                Quantity: {quantity}
-              </Typography>
-              <div style={{ display: 'flex', gap: '6px' }}>
-                <Button variant="contained"
-                  style={{ backgroundColor: '#C9725A', color: '#fff' }}
-                  onClick={() => removeItem(name)}>
-                  <Typography variant={'h6'}>  - </Typography>
-                </Button>
-                <Button variant="contained"
-                  style={{ backgroundColor: '#C9725A', color: '#fff' }}
-                  onClick={() => addItem(name)}>
-                  <Typography variant={'h6'}>  + </Typography>
-                </Button>
-                <Button variant="contained"
-                  style={{ backgroundColor: '#C9725A', color: '#fff', padding: '11px 0' }}
-                  onClick={() => deleteItem(name)}>
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/128/6861/6861362.png"
-                    alt="Delete"
-                    style={{ width: '24px', height: '24px' }} // Adjust size as needed
-                  />
-                </Button>
-              </div>
-            </Box>
-          ))}
-        </Stack>
+        ) : filteredInventory.length > 0 ? (
+          filteredInventory.map((item) => (
+            <Typography key={item.name} variant="h6" sx={{ margin: 1 }}>
+              {item.name} (Quantity: {item.quantity})
+            </Typography>
+          ))
+        ) : (
+          <Typography variant="h6" color="gray">
+            No items found.
+          </Typography>
+        )}
       </Box>
     </Box>
   )

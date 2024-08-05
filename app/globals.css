@@ -4,3 +4,12 @@
   margin: 0;
 }
 
+body {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.322)),
+    /* White overlay */
+    url('bakery.png');
+  /* Background image */
+  background-size: cover;
+  background-position: center;
+}

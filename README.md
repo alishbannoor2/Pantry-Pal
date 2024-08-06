@@ -12,7 +12,7 @@
 
 ###
 
-<h2 align="left">Built with</h2>
+<h1 align="left">Built with</h1>
 
 ###
 
@@ -36,7 +36,7 @@
 
 ###
 
-<h2 align="left">Features</h2>
+<h1 align="left">Features</h1>
 
 ###
 
@@ -44,31 +44,51 @@
 
 ###
 
-<h2 align="left">Getting started</h2>
+<h1 align="left">Getting started</h1>
 
 ###
 
-<p align="left">Clone down this repository. You will need node.js and git installed globally on your machine.</p>
+<p align="left">Clone down this repository. You will need
+  
+  `node.js` and `git` installed globally on your machine.</p>
 
 ###
 
-<h2 align="left">Installations</h2>
+<h1 align="left">Installations</h1>
 
 ###
 
-<p align="left">1. Installation: npm install<br><br>3. Run: npm install @mui/material @emotion/react @emotion/styled<br><br>2. In the project directory, you can run: npm run dev<br><br>Open http://localhost:3000 to view it in the browser. The page will reload if you make edits.</p>
+<p align="left">1. Installation: 
+  
+```bash
+npm install
+```
+  <br><br>3. Run: 
+  
+  ```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+<br><br>2. In the project directory, you can run: 
+
+```bash
+npm run dev
+```
+<br><br>Open http://localhost:3000 to view it in the browser. The page will reload if you make edits.</p>
 
 ###
 
-<h2 align="left">Usage</h2>
+<h1 align="left">Usage</h1>
 
 ###
 
-<p align="left">You can start editing the page by modifying app/page.js. The page auto-updates as you edit the file.</p>
+<p align="left">You can start editing the page by modifying 
+  
+`app/page.js`
+ The page auto-updates as you edit the file.</p>
 
 ###
 
-<h2 align="left">Contribution</h2>
+<h1 align="left">Contribution</h1>
 
 ###
 

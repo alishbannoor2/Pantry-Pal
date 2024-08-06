@@ -44,6 +44,40 @@
 
 ###
 
+<h1 align="left">Project Structure</h1>
+
+###
+
+```
+■ app
+  ● about
+    ○ page.jsx
+  ● components
+    ○ Navbar.jsx
+  ● context
+    ○ AuthContext.js
+  ● bakery.png
+  ● favicon.ico
+  ● globals.css
+  ● layout.js
+  ● page.js
+  ● pantry_tracker.mp4
+  ● trash.png
+■ public
+  ● next.svg
+  ● vercel.svg
+■ .eslintrc.json
+■ .gitignore
+■ README.md
+■ firebase.js
+■ jsconfig.json
+■ next.config.mjs
+■ package-lock.json
+■ package.json
+```
+
+###
+
 <h1 align="left">Getting started</h1>
 
 ###

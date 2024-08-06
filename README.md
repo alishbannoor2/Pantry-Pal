@@ -1,4 +1,4 @@
-<h1 align="left">Pantry Tracker</h1>
+<h1 align="left">Pantry Pal</h1>
 
 ###
 

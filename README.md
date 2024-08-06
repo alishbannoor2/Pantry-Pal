@@ -8,7 +8,7 @@
 
 ###
 
-<p align="left">My Pantry tracker is a user-friendly and intuitive web application designed to help you manage your pantry inventory efficiently. Users can easily add and update items in their pantry, ensuring that they always know what they have on hand. The application allows you to keep track of item quantities and expiration dates, helping to minimize food waste and streamline meal planning.</p>
+<p align="left">My Pantry Pal is a user-friendly and intuitive web application designed to help you manage your pantry inventory efficiently. Users can easily add and update items in their pantry, ensuring that they always know what they have on hand. The application allows you to keep track of item quantities and expiration dates, helping to minimize food waste and streamline meal planning.</p>
 
 ###
 

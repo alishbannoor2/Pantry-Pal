@@ -16,7 +16,7 @@
 
 ###
 
-<p align="left">My pantry tracker https://pantry-tracker-bice.vercel.app/ which features some of my github projects as well as my resume and technical skills.<br><br>This project is built using these technologies.<br><br>▪ Next.js<br>▪ Node.js<br>▪ React.js<br>▪ MUI<br>▪ Firebase Auth<br>▪ Firebase Database<br>▪ VsCode<br>▪ Vercel</p>
+<p align="left">My pantry tracker https://pantry-tracker-bice.vercel.app/ which features some of my github projects as well as my resume and technical skills.<br><br>This project is built using these technologies.<br><br>▪ Next.js<br>▪ Node.js<br>▪ MUI<br>▪ Firebase Auth<br>▪ Firebase Database<br>▪ VsCode<br>▪ Vercel</p>
 
 ###
 

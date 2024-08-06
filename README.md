@@ -48,7 +48,12 @@
 
 ###
 
-<p align="left">Clone down this repository.
+<p align="left">Navigate to your desired directory
+  
+   ```bash
+cd path/to/your-project
+  ```
+  Clone down this repository.
   
   ```bash
 git clone https://github.com/alishbannoor2/Pantry-Tracker.git

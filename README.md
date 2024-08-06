@@ -48,7 +48,12 @@
 
 ###
 
-<p align="left">Clone down this repository. You will need
+<p align="left">Clone down this repository.
+  
+  ```bash
+git clone https://github.com/alishbannoor2/Pantry-Tracker.git
+  ```
+  You will need
   
   `node.js` and `git` installed globally on your machine.</p>
 

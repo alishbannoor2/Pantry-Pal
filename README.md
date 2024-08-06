@@ -63,12 +63,12 @@
 ```bash
 npm install
 ```
-  <br><br>3. Run: 
+  2. Run: 
   
   ```bash
 npm install @mui/material @emotion/react @emotion/styled
 ```
-<br><br>2. In the project directory, you can run: 
+3. In the project directory, you can run: 
 
 ```bash
 npm run dev

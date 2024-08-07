@@ -132,6 +132,15 @@ npm run dev
 
 ###
 
+<h1 align="left">Aid</h1>
+
+###
+
+<p align="left">For smooth project workflow: https://youtu.be/opLKAlSFOs8 </p>
+<p align="left">For deploying app on Vercel: https://youtu.be/eIk6TCpbCDk</p>
+
+###
+
 <h1 align="left">Contribution</h1>
 
 ###

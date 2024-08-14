@@ -107,7 +107,7 @@ git clone https://github.com/alishbannoor2/Pantry-Tracker.git
 ```bash
 npm install
 ```
-  2. Run: 
+2. Run: 
   
   ```bash
 npm install @mui/material @emotion/react @emotion/styled
